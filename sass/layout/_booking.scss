@@ -1,0 +1,46 @@
+.booking {
+  display: flex;
+  flex-direction: column;
+
+  &__location {
+    background-color: $color-grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 0;
+    border-top: 3px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(
+      to top,
+      $color-grey-dark2,
+      $color-grey-dark
+    );
+    font-size: 1.4rem;
+    font-weight: bold;
+
+    & svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 12px;
+      color: $color-txt;
+    }
+  }
+
+  &__box {
+    background-color: $color-grey-light;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: $margin-standard;
+    padding-bottom: $margin-big;
+    text-align: center;
+
+    &-bolder {
+      margin: 0 $margin-big 16px $margin-big;
+      font-size: 2.1rem;
+      font-weight: bold;
+      color: $color-txt-dark;
+    }
+  }
+}
