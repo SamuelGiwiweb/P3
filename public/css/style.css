@@ -22,9 +22,7 @@ body {
   letter-spacing: 0.06rem;
 }
 
-h1,
-h2,
-h3 {
+h1 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -378,6 +376,48 @@ template {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
 }
 
+.instructions {
+  padding: 52px 32px;
+}
+.instructions__card {
+  background-color: #f1f3f5;
+  border-radius: 24px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-bottom: 32px;
+}
+.instructions__card:nth-child(2) {
+  margin-top: 32px;
+}
+.instructions__card:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+}
+.instructions__card:hover svg {
+  fill: #9356dc;
+}
+.instructions__card-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: -13px;
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  width: 26px;
+  height: 26px;
+}
+.instructions__card svg {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+  fill: #868e96;
+}
+
 .booking {
   display: flex;
   flex-direction: column;
@@ -398,7 +438,7 @@ template {
   width: 16px;
   height: 16px;
   margin-right: 12px;
-  color: #343a40;
+  fill: #343a40;
 }
 .booking__box {
   background-color: #f1f3f5;
