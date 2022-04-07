@@ -87,7 +87,8 @@ body {
   letter-spacing: 0.06rem;
 }
 
-h1 {
+h1,
+footer h2 {
   font-family: "Shrikhand", cursive;
 }
 
@@ -494,6 +495,12 @@ footer ul {
 }
 footer ul li {
   margin-bottom: 12px;
+}
+footer svg {
+  fill: white;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
 }
 
 .header {

@@ -11,4 +11,10 @@ footer {
       margin-bottom: 12px;
     }
   }
+  & svg {
+    fill: white;
+    width: 14px;
+    height: 14px;
+    margin-right: 8px;
+  }
 }
