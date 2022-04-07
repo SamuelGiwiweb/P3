@@ -1,0 +1,14 @@
+footer {
+  background-color: $color-txt-dark;
+  padding: $margin-big $margin-standard;
+
+  color: white;
+
+  & ul {
+    margin-top: $margin-standard;
+
+    & li {
+      margin-bottom: 12px;
+    }
+  }
+}

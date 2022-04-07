@@ -8,3 +8,7 @@ body {
 h1 {
   font-family: $font-title;
 }
+
+h3::first-letter {
+  text-transform: capitalize;
+}
