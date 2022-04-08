@@ -45,7 +45,7 @@
   left: 0;
   right: 0;
   z-index: 10;
-  background: #212529;
+  background: black;
   clip-path: path("M12 21.593c-5.63-5.539-11-10.297-11-14.402 0-3.791 3.068-5.191 5.281-5.191 1.312 0 4.151.501 5.719 4.457 1.59-3.968 4.464-4.447 5.726-4.447 2.54 0 5.274 1.621 5.274 5.181 0 4.069-5.136 8.625-11 14.402m5.726-20.583c-2.203 0-4.446 1.042-5.726 3.238-1.285-2.206-3.522-3.248-5.719-3.248-3.183 0-6.281 2.187-6.281 6.191 0 4.661 5.571 9.429 12 15.809 6.43-6.38 12-11.148 12-15.809 0-4.011-3.095-6.181-6.274-6.181");
 }
 
@@ -88,16 +88,36 @@ body {
 }
 
 h1,
-footer h2 {
+footer h2,
+.menus h2 {
   font-family: "Shrikhand", cursive;
 }
 
-h3::first-letter {
+h1,
+.menus h2,
+h4 {
+  color: black;
+}
+
+h2::first-letter,
+h3::first-letter,
+h4::first-letter {
   text-transform: capitalize;
 }
 
 .restaurants__card-box-txt p {
   color: #343a40;
+}
+
+.menus__title h2 {
+  font-size: 2.5rem;
+}
+.menus__title h3 {
+  text-transform: uppercase;
+}
+
+.menus__card-price {
+  font-weight: bold;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -486,11 +506,11 @@ template {
   margin: 0 52px 16px 52px;
   font-size: 2.1rem;
   font-weight: bold;
-  color: #212529;
+  color: black;
 }
 
 footer {
-  background-color: #212529;
+  background-color: black;
   padding: 52px 32px;
   color: white;
 }
@@ -562,6 +582,43 @@ footer svg {
   background-repeat: no-repeat;
 }
 
+.menus {
+  padding: 52px 32px;
+  background-color: #e9ecef;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: -52px;
+  border-radius: 36px 36px 0 0;
+}
+.menus__title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 32px;
+}
+.menus__title h2 {
+  display: block;
+}
+.menus__category {
+  width: 100%;
+}
+.menus__category-hr {
+  width: 55px;
+  border-top: 3px solid #99e2d0;
+  margin: 4px 0 12px;
+}
+.menus__card {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  padding: 12px;
+}
+
 .restaurants {
   padding: 52px 32px;
   background-color: #e9ecef;
@@ -608,7 +665,7 @@ footer svg {
 }
 .restaurants__card-box-txt h3 {
   font-weight: bold;
-  color: #212529;
+  color: black;
 }
 .restaurants__card-box-heart {
   margin-right: 32px;
@@ -625,7 +682,7 @@ footer svg {
 .header__back svg {
   width: 24px;
   height: 24px;
-  fill: #212529;
+  fill: black;
 }
 
 /*# sourceMappingURL=style.css.map */

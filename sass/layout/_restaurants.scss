@@ -1,10 +1,5 @@
 .restaurants {
-  padding: $margin-big $margin-standard;
-  background-color: $color-grey;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  @include layout-grey;
 
   & h2 {
     align-self: flex-start;

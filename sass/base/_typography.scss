@@ -6,13 +6,35 @@ body {
   letter-spacing: 0.06rem;
 }
 h1,
-footer h2 {
+footer h2,
+.menus h2 {
   font-family: $font-title;
 }
+h1,
+.menus h2,
+h4 {
+  color: $color-txt-dark;
+}
 
-h3::first-letter {
+h2::first-letter,
+h3::first-letter,
+h4::first-letter {
   text-transform: capitalize;
 }
 .restaurants__card-box-txt p {
   color: $color-txt;
+}
+.menus__title {
+  & h2 {
+    font-size: $font-size-big;
+  }
+  .menus__category {
+  }
+  & h3 {
+    text-transform: uppercase;
+  }
+}
+
+.menus__card-price {
+  font-weight: bold;
 }

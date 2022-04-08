@@ -1,0 +1,33 @@
+.menus {
+  @include layout-grey;
+  margin-top: -$margin-big;
+  border-radius: 36px 36px 0 0;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: $margin-standard;
+    & h2 {
+      display: block;
+    }
+  }
+  &__category {
+    width: 100%;
+    &-hr {
+      width: 55px;
+      border-top: 3px solid $color-tertiary;
+      margin: 4px 0 12px;
+    }
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: white;
+    border-radius: $margin-small;
+    box-shadow: $shadow;
+    padding: 12px;
+  }
+}
