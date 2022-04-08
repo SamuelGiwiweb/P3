@@ -13,3 +13,6 @@ footer h2 {
 h3::first-letter {
   text-transform: capitalize;
 }
+.restaurants__card-box-txt p {
+  color: $color-txt;
+}

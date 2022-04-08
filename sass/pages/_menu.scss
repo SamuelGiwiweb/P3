@@ -1,0 +1,14 @@
+.header {
+  position: relative;
+  &__back {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    & svg {
+      width: 24px;
+      height: 24px;
+      fill: $color-txt-dark;
+    }
+  }
+}
