@@ -109,11 +109,16 @@ h4::first-letter {
   color: #343a40;
 }
 
+.menus__category h3 {
+  text-transform: uppercase;
+}
+
 .menus__title h2 {
   font-size: 2.5rem;
 }
-.menus__title h3 {
-  text-transform: uppercase;
+
+.menus__card-txt p {
+  line-height: 2;
 }
 
 .menus__card-price {
@@ -467,7 +472,7 @@ template {
   color: white;
   text-decoration: none;
   margin-top: 32px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .booking {
@@ -510,7 +515,7 @@ template {
 }
 
 footer {
-  background-color: black;
+  background-color: #343a40;
   padding: 52px 32px;
   color: white;
 }
@@ -537,7 +542,7 @@ footer svg {
 .instructions__card {
   background-color: #f1f3f5;
   border-radius: 24px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   padding: 32px;
   position: relative;
   display: flex;
@@ -574,7 +579,7 @@ footer svg {
 }
 
 .menu__hero {
-  width: 100vw;
+  width: 100%;
   height: 300px;
   background-image: url("../../public/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
   background-position: center;
@@ -591,6 +596,7 @@ footer svg {
   align-items: center;
   margin-top: -52px;
   border-radius: 36px 36px 0 0;
+  width: 100%;
 }
 .menus__title {
   display: flex;
@@ -610,13 +616,70 @@ footer svg {
   margin: 4px 0 12px;
 }
 .menus__card {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: flex-end;
   background-color: white;
   border-radius: 12px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   padding: 12px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+.menus__card:last-child {
+  margin-bottom: 52px;
+}
+.menus__card-txt {
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  width: 60%;
+}
+.menus__card-price {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+.menus__card-icon {
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  align-self: stretch;
+  border-radius: 0 12px 12px 0;
+  background-color: #99e2d0;
+  margin: -1.2rem -8rem -1.2rem 1rem;
+  transition-duration: 0.5s;
+}
+.menus__card-icon-box {
+  border-radius: 50%;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(180deg);
+  transition-duration: 0.5s;
+}
+.menus__card-icon-box svg {
+  width: 28px;
+  height: 28px;
+  fill: #99e2d0;
+}
+.menus__card:hover .menus__card-icon {
+  margin-right: -1.5rem;
+  opacity: 1;
+}
+.menus__card:hover .menus__card-icon-box {
+  transform: rotate(0);
+}
+.menus .btn {
+  padding: 16px 42px;
 }
 
 .restaurants {
@@ -632,7 +695,7 @@ footer svg {
 }
 .restaurants__card {
   border-radius: 18px;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   width: 100%;
   margin-bottom: 32px;
 }

@@ -24,17 +24,22 @@ h4::first-letter {
 .restaurants__card-box-txt p {
   color: $color-txt;
 }
-.menus__title {
-  & h2 {
-    font-size: $font-size-big;
-  }
-  .menus__category {
-  }
+
+.menus__category {
   & h3 {
     text-transform: uppercase;
   }
 }
-
+.menus__title {
+  & h2 {
+    font-size: $font-size-big;
+  }
+}
+.menus__card-txt {
+  & p {
+    line-height: 2;
+  }
+}
 .menus__card-price {
   font-weight: bold;
 }
