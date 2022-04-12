@@ -2,9 +2,19 @@
   padding: 16px 22px;
   border-radius: 50px;
   background: $color-primary;
-  background: linear-gradient($color-secondary 0%, $color-primary 100%);
+  background: $btn-gradient;
   color: white;
   text-decoration: none;
   margin-top: $margin-standard;
   box-shadow: $shadow;
+  transition: 0.25s ease-in-out;
+
+  cursor: pointer;
+  &:hover {
+    background-image: linear-gradient(
+      lighten($color-secondary, 5%) 0%,
+      lighten($color-primary, 5%) 100%
+    );
+    box-shadow: $shadow-big;
+  }
 }
