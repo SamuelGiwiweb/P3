@@ -883,4 +883,38 @@ footer svg {
   fill: black;
 }
 
+@media screen and (min-width: 700px) {
+  .menus__category {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .menus__category-title {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+.menus__wrapper {
+  margin: 32px 0;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 700px) {
+  .menus__wrapper {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+}
+@media screen and (min-width: 700px) {
+  .menus__card {
+    width: 300px;
+    margin-bottom: 0;
+  }
+  .menus__card:last-child {
+    margin-bottom: 0;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
