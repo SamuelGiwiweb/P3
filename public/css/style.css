@@ -540,7 +540,6 @@ template {
   width: 100vw;
   height: 110vh;
   background: white;
-  animation: loading 4s ease-out;
   animation-fill-mode: backwards;
 }
 .loader svg {
@@ -626,6 +625,18 @@ footer svg {
   margin-right: 8px;
 }
 
+@media screen and (min-width: 700px) {
+  footer h2 {
+    text-align: center;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 12px;
+  }
+}
 .header {
   text-align: center;
 }
@@ -642,10 +653,7 @@ footer svg {
   display: flex;
   align-items: center;
   font-weight: bold;
-  margin-bottom: 32px;
-}
-.instructions__card:nth-child(2) {
-  margin-top: 32px;
+  width: 100%;
 }
 .instructions__card:hover {
   background-color: rgba(147, 86, 220, 0.2);
@@ -802,10 +810,6 @@ footer svg {
   border-radius: 18px;
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.1);
   width: 100%;
-  margin-bottom: 32px;
-}
-.restaurants__card:nth-child(2) {
-  margin-top: 32px;
 }
 .restaurants__card-img {
   position: relative;
@@ -839,6 +843,32 @@ footer svg {
   margin-right: 32px;
 }
 
+.flex__wrapper {
+  width: 100%;
+  margin-top: 32px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 32px;
+}
+@media screen and (min-width: 700px) {
+  .flex__wrapper {
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .restaurants__card {
+    width: 40%;
+  }
+
+  .instructions__card {
+    max-width: 300px;
+  }
+}
 .header {
   position: relative;
 }

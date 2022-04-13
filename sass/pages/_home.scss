@@ -1,1 +1,12 @@
+.flex__wrapper {
+  @include flexWrapper;
+}
 
+@media screen and (min-width: 700px) {
+  .restaurants__card {
+    width: 40%;
+  }
+  .instructions__card {
+    max-width: 300px;
+  }
+}
