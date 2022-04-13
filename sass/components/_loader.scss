@@ -17,7 +17,7 @@
     height: 88px;
     width: 88px;
     fill: $color-secondary;
-    animation: scaling 4s ease-out;
+    animation: scaling 4s ease-in-out;
     animation-fill-mode: backwards;
   }
   &-bar {

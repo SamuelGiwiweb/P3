@@ -80,7 +80,7 @@
   }
   100% {
     opacity: 0;
-    display: none;
+    z-index: -1;
   }
 }
 
@@ -93,5 +93,20 @@
   }
   100% {
     transform: scale(0);
+  }
+}
+
+// menu appear
+@keyframes appear {
+  0% {
+    transform: translateY(50%);
+    opacity: 0;
+    // transform-origin: bottom 50%;
+  }
+  65% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
   }
 }
