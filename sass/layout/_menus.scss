@@ -27,7 +27,6 @@
     position: relative;
     display: flex;
     align-items: flex-end;
-    // max-width: 382px;
     background-color: white;
     border-radius: $margin-small;
     box-shadow: $shadow;
@@ -37,8 +36,7 @@
     margin-bottom: $margin-small;
     animation: appear 2s ease-out;
     animation-fill-mode: both;
-    // animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
-    @for $i from 3 through 5 {
+    @for $i from 2 through 5 {
       &:nth-child(#{$i}) {
         animation-delay: 200ms * $i;
       }

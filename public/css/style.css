@@ -94,10 +94,8 @@
     transform: translateY(50%);
     opacity: 0;
   }
-  65% {
-    opacity: 1;
-  }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
@@ -680,10 +678,34 @@ footer svg {
   fill: #868e96;
 }
 
-.menu__hero {
+.menu__hero-palette-gout {
   width: 100%;
   height: 300px;
   background-image: url("../../public/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menu__hero-note-enchantee {
+  width: 100%;
+  height: 300px;
+  background-image: url("../../public/images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menu__hero-francaise {
+  width: 100%;
+  height: 300px;
+  background-image: url("../../public/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.menu__hero-delice-sens {
+  width: 100%;
+  height: 300px;
+  background-image: url("../../public/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -730,6 +752,9 @@ footer svg {
   margin-bottom: 12px;
   animation: appear 2s ease-out;
   animation-fill-mode: both;
+}
+.menus__card:nth-child(2) {
+  animation-delay: 400ms;
 }
 .menus__card:nth-child(3) {
   animation-delay: 600ms;
@@ -909,7 +934,7 @@ footer svg {
 }
 @media screen and (min-width: 700px) {
   .menus__card {
-    width: 300px;
+    width: 450px;
     margin-bottom: 0;
   }
   .menus__card:last-child {

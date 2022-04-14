@@ -101,12 +101,11 @@
   0% {
     transform: translateY(50%);
     opacity: 0;
-    // transform-origin: bottom 50%;
   }
   65% {
-    opacity: 1;
   }
   100% {
+    opacity: 1;
     transform: translateY(0);
   }
 }
