@@ -538,6 +538,7 @@ template {
   width: 100vw;
   height: 110vh;
   background: white;
+  animation: loading 4s ease-out;
   animation-fill-mode: backwards;
 }
 .loader svg {
@@ -555,6 +556,8 @@ template {
   margin-top: 25px;
   overflow: hidden;
   position: relative;
+  animation: scaling 4s ease-in-out;
+  animation-fill-mode: backwards;
 }
 .loader-bar::after {
   content: "";
