@@ -1,0 +1,55 @@
+//open version carte 1
+.heart::after {
+  content: "\f004";
+  font-family: "Font Awesome 5 Free";
+  font-weight: normal;
+  font-size: 2.5rem;
+  color: $color-grey-dark2;
+  align-items: center;
+}
+
+.heart:hover::after {
+  font-weight: bold;
+  background-color: white;
+  background: -webkit-linear-gradient(white, $color-secondary, $color-primary);
+  animation: heart 0.25s both;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+// * {
+//   border: 1px solid hotpink;
+// }
+
+.heart {
+  display: flex;
+  align-items: center;
+}
+
+@keyframes heart {
+  0% {
+    background-position-y: 1.5rem;
+  }
+
+  100% {
+    background-position-y: -0.6rem;
+  }
+}
+
+// .menu {
+//   // margin-top: -4rem;
+//   // border-radius: 2rem 2rem 0 0;
+//   // background-color: #f6f6f6;
+//   // z-index: 1;
+//   // position: relative;
+
+//   // &__header {
+//   //   padding: 1rem 2rem 0 1rem;
+//   //   display: flex;
+//   //   align-items: center;
+//   //   justify-content: space-between;
+//   // }
+
+//   // &__title {
+//   //   font-family: "Shrikhand", "cursive";
+//   // }
+// }
